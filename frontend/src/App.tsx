@@ -1,4 +1,4 @@
-import { Greet } from "@backend/go/main/App";
+import { Greet } from "@wailsjs/go/main/App";
 import { ChangeEvent, useState } from "react";
 
 export default function App() {

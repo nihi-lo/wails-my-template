@@ -25,7 +25,7 @@
     "baseUrl": ".",
     "paths": {
       "@frontend/*": ["./src/*"],
-      "@backend/*": ["./wailsjs/*"]
+      "@wailsjs/*": ["./wailsjs/*"]
     }
   },
   "include": ["**/*.ts", "**/*.tsx", "**/*.cjs", "**/*.js"],
