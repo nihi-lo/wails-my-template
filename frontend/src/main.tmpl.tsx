@@ -1,6 +1,6 @@
 import "@{{.ProjectName}}/styles/globals.css";
 
-import App from "@{{.ProjectName}}/App.tsx";
+import { App } from "@{{.ProjectName}}/App.tsx";
 import React from "react";
 import ReactDOM from "react-dom/client";
 

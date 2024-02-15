@@ -1,5 +1,5 @@
 const title = "Hello Test";
 
-export function MyComponent() {
+export const MyComponent = () => {
   return <div>{title}</div>;
-}
+};
