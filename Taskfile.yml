@@ -1,0 +1,38 @@
+version: "3"
+
+tasks:
+  # Wailsアプリ を開発モードで起動します
+  dev:
+    cmds:
+      - wails dev
+    silent: true
+
+  # Wailsアプリ をビルドします
+  build:
+    cmds:
+      - wails build
+    silent: true
+
+  # ソースコードの静的解析を実行します
+  lint:
+    cmds:
+      - cd frontend && npm run lint
+    silent: true
+
+  # コードを整形します
+  format:
+    cmds:
+      - cd frontend && npm run format
+    silent: true
+
+  # 単体テストを実施します
+  test:
+    cmds:
+      - cd frontend && npm run test
+    silent: true
+
+  # Vitest UI を起動します
+  test:ui:
+    cmds:
+      - cd frontend && npm run test:ui
+    silent: true
