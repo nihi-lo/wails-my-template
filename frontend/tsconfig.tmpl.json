@@ -24,7 +24,7 @@
     /* Path Aliases */
     "baseUrl": ".",
     "paths": {
-      "@frontend/*": ["./src/*"],
+      "@{{.ProjectName}}/*": ["./src/*"],
       "@wailsjs/*": ["./wailsjs/*"]
     }
   },
