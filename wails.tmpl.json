@@ -9,5 +9,8 @@
   "author": {
     "name": "{{.AuthorName}}",
     "email": "{{.AuthorEmail}}"
+  },
+  "info": {
+    "productVersion": "0.1.0"
   }
 }
