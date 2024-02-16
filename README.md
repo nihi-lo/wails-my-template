@@ -1,8 +1,12 @@
-# README
-
-## About
+# wails-my-template
 
 About your template
+
+## Creating a Project
+
+```
+wails init -n myproject -t https://github.com/nihi-lo/wails-my-template
+```
 
 ## Live Development
 
