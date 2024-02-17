@@ -1,7 +1,7 @@
 import { Greet } from "@wailsjs/go/main/App";
 import { ChangeEvent, useState } from "react";
 
-export const App = () => {
+export const App = (): JSX.Element => {
   const [resultText, setResultText] = useState(
     "Please enter your name below 👇",
   );

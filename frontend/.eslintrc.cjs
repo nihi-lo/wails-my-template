@@ -15,6 +15,7 @@ const config = {
   },
   plugins: ["@typescript-eslint", "import", "react-refresh"],
   rules: {
+    "@typescript-eslint/explicit-module-boundary-types": "error",
     "import/order": [
       "warn",
       {
