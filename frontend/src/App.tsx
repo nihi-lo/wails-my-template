@@ -1,5 +1,9 @@
+import { Button, Input } from "@nextui-org/react";
 import { Greet } from "@wailsjs/go/main/App";
 import { ChangeEvent, useState } from "react";
+
+import { Flex } from "@{{.ProjectName}}/components/layout/Flex";
+import { ThemeToggle } from "@{{.ProjectName}}/components/model/ThemeToggle";
 
 export const App = (): JSX.Element => {
   const [resultText, setResultText] = useState(
@@ -16,30 +20,30 @@ export const App = (): JSX.Element => {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-[rgba(27,38,54,1)]">
-      <div className="container flex flex-col items-center justify-center gap-12">
-        <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-          Hello <span className="text-[#DF0000]">Wails</span> App
-        </h1>
-        <div className="flex flex-col items-center justify-center gap-2">
-          <div className="text-white">{resultText}</div>
-          <div className="flex items-center justify-center gap-2">
-            <input
-              className="rounded px-2"
-              type="text"
-              name="input"
-              autoComplete="off"
-              onChange={handleChangeInput}
-            />
-            <button
-              className="rounded border border-white px-2 text-white transition-colors hover:bg-white/25"
-              onClick={handleClickGreet}
-            >
-              Greet
-            </button>
-          </div>
-        </div>
-      </div>
-    </main>
+    <div className="relative flex min-h-screen flex-col bg-background">
+      <Flex as="header" align="center" justify="end" p="sm">
+        <ThemeToggle />
+      </Flex>
+      <Flex as="main" align="center" justify="center" grow="1" p="lg">
+        <Flex direction="col" align="center" justify="center" gap="xl">
+          <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem]">
+            Hello <span className="text-primary">Wails</span> App
+          </h1>
+          <Flex direction="col" align="center" justify="center" gap="sm">
+            <div>{resultText}</div>
+            <Flex align="center" justify="center" gap="sm">
+              <Input
+                label="Name"
+                labelPlacement="outside-left"
+                onChange={handleChangeInput}
+              />
+              <Button color="primary" onClick={handleClickGreet}>
+                Greet
+              </Button>
+            </Flex>
+          </Flex>
+        </Flex>
+      </Flex>
+    </div>
   );
 };
