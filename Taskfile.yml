@@ -1,6 +1,14 @@
 version: "3"
 
 tasks:
+  # Wailsアプリ の初期設定を行います
+  init:
+    cmds:
+      - cd frontend && npm ci
+      - cd frontend && npm run lint -- --fix
+      - cd frontend && npm run format -- --write
+    silent: true
+
   # Wailsアプリ を開発モードで起動します
   dev:
     cmds:
