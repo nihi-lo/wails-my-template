@@ -1,9 +1,9 @@
 import { Button, Input } from "@nextui-org/react";
+import { Flex } from "@{{.ProjectName}}/components/layout/Flex";
+import { Counter } from "@{{.ProjectName}}/components/model/counter/Counter";
+import { ThemeToggle } from "@{{.ProjectName}}/components/model/theme/ThemeToggle";
 import { Greet } from "@wailsjs/go/main/App";
 import { ChangeEvent, useState } from "react";
-
-import { Flex } from "@{{.ProjectName}}/components/layout/Flex";
-import { ThemeToggle } from "@{{.ProjectName}}/components/model/ThemeToggle";
 
 export const App = (): JSX.Element => {
   const [resultText, setResultText] = useState(
@@ -26,7 +26,7 @@ export const App = (): JSX.Element => {
       </Flex>
       <Flex as="main" align="center" justify="center" grow="1" p="lg">
         <Flex direction="col" align="center" justify="center" gap="xl">
-          <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem]">
+          <h1 className="text-7xl font-extrabold">
             Hello <span className="text-primary">Wails</span> App
           </h1>
           <Flex direction="col" align="center" justify="center" gap="sm">
@@ -42,6 +42,7 @@ export const App = (): JSX.Element => {
               </Button>
             </Flex>
           </Flex>
+          <Counter />
         </Flex>
       </Flex>
     </div>
