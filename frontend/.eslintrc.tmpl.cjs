@@ -45,6 +45,11 @@ const config = {
             group: "internal",
             position: "before",
           },
+          {
+            pattern: "@wailsjs/**",
+            group: "internal",
+            position: "before",
+          },
         ],
       },
     ],
