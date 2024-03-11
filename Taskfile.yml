@@ -5,8 +5,7 @@ tasks:
   init:
     cmds:
       - cd frontend && npm ci
-      - cd frontend && npm run lint -- --fix
-      - cd frontend && npm run format -- --write
+      - cd frontend && npm run format
     silent: true
 
   # Wailsアプリ を開発モードで起動します

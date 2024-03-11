@@ -1,6 +1,7 @@
 import { Button } from "@nextui-org/react";
-import { useCountStore } from "@{{.ProjectName}}/hooks/useCountStore";
 import { IoAddOutline } from "react-icons/io5";
+
+import { useCountStore } from "@{{.ProjectName}}/hooks/useCountStore";
 
 export const CountIncreaseButton = (): JSX.Element => {
   const increase = useCountStore((state) => state.increase);
@@ -10,13 +11,7 @@ export const CountIncreaseButton = (): JSX.Element => {
   };
 
   return (
-    <Button
-      size="sm"
-      radius="full"
-      color="primary"
-      isIconOnly
-      onClick={handleClick}
-    >
+    <Button size="sm" radius="full" color="primary" isIconOnly onClick={handleClick}>
       <IoAddOutline className="size-4" />
     </Button>
   );

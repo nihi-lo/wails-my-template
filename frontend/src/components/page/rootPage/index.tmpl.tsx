@@ -1,16 +1,13 @@
 import { Button, Input } from "@nextui-org/react";
+import { Greet } from "@wailsjs/go/main/App";
 import { ChangeEvent, useState } from "react";
 
-import { HStack, VStack } from "@{{.ProjectName}}/components/layout";
-import { Counter } from "@{{.ProjectName}}/components/model/counter";
+import { Counter } from "@{{.ProjectName}}/components/model/counter/Counter";
 import { ThemeToggle } from "@{{.ProjectName}}/components/model/theme";
-
-import { Greet } from "@wailsjs/go/main/App";
+import { HStack, VStack } from "@{{.ProjectName}}/components/ui/layout";
 
 const RootPage = (): JSX.Element => {
-  const [resultText, setResultText] = useState(
-    "Please enter your name below 👇",
-  );
+  const [resultText, setResultText] = useState("Please enter your name below 👇");
   const [name, setName] = useState("");
 
   const handleChangeInput = (e: ChangeEvent<HTMLInputElement>) => {
@@ -23,7 +20,7 @@ const RootPage = (): JSX.Element => {
 
   return (
     <div className="relative flex min-h-screen flex-col bg-background">
-      <HStack as="header" align="center" justify="end" p="sm">
+      <HStack align="center" justify="end" p="sm">
         <ThemeToggle />
       </HStack>
       <HStack align="center" justify="center" grow="1" p="lg">
