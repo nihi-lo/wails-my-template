@@ -52,6 +52,7 @@ const ThemeToggle = (): JSX.Element => {
       </DropdownTrigger>
       <DropdownMenu
         selectedKeys={selectedKeys}
+        selectionMode="single"
         onAction={handleAction}
         onSelectionChange={handleSelectionChange}
       >
