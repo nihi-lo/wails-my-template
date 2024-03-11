@@ -40,6 +40,11 @@ const config = {
             group: "internal",
             position: "before",
           },
+          {
+            pattern: "@{{.ProjectName}}/hooks/**",
+            group: "internal",
+            position: "before",
+          },
         ],
       },
     ],
