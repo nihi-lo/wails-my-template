@@ -1,13 +1,13 @@
 {
-  "name": "srsim",
+  "name": "{{.ProjectName}}",
   "lockfileVersion": 3,
   "requires": true,
   "packages": {
     "": {
-      "name": "srsim",
+      "name": "{{.ProjectName}}",
       "dependencies": {
-        "@nextui-org/react": "^2.2.9",
-        "framer-motion": "^11.0.5",
+        "@nextui-org/react": "^2.2.10",
+        "framer-motion": "^11.0.8",
         "immer": "^10.0.3",
         "next-themes": "^0.2.1",
         "react": "^18.2.0",
@@ -19,25 +19,28 @@
       "devDependencies": {
         "@testing-library/jest-dom": "^6.4.2",
         "@testing-library/react": "^14.2.1",
-        "@types/react": "^18.2.55",
+        "@types/react": "^18.2.56",
         "@types/react-dom": "^18.2.19",
-        "@typescript-eslint/eslint-plugin": "^6.21.0",
-        "@typescript-eslint/parser": "^6.21.0",
+        "@typescript-eslint/eslint-plugin": "^7.0.2",
+        "@typescript-eslint/parser": "^7.0.2",
         "@vitejs/plugin-react-swc": "^3.5.0",
         "@vitest/coverage-v8": "^1.2.2",
         "@vitest/ui": "^1.2.2",
-        "autoprefixer": "^10.4.17",
-        "eslint": "^8.56.0",
+        "autoprefixer": "^10.4.18",
+        "eslint": "^8.57.0",
+        "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-import": "^2.29.1",
         "eslint-plugin-react-hooks": "^4.6.0",
         "eslint-plugin-react-refresh": "^0.4.5",
+        "eslint-plugin-strict-dependencies": "^1.3.3",
+        "eslint-plugin-unused-imports": "^3.1.0",
         "jsdom": "^24.0.0",
         "postcss": "^8.4.35",
         "prettier": "3.2.5",
         "prettier-plugin-tailwindcss": "0.5.11",
         "tailwindcss": "^3.4.1",
         "typescript": "^5.2.2",
-        "vite": "^5.1.0",
+        "vite": "^5.1.4",
         "vite-tsconfig-paths": "^4.3.1",
         "vitest": "^1.2.2"
       }
@@ -764,9 +767,9 @@
       }
     },
     "node_modules/@eslint/js": {
-      "version": "8.56.0",
-      "resolved": "https://registry.npmjs.org/@eslint/js/-/js-8.56.0.tgz",
-      "integrity": "sha512-gMsVel9D7f2HLkBma9VbtzZRehRogVRfbr++f06nL2vnCGCNlzOD+/MUov/F4p8myyAHspEhVobgjpX64q5m6A==",
+      "version": "8.57.0",
+      "resolved": "https://registry.npmjs.org/@eslint/js/-/js-8.57.0.tgz",
+      "integrity": "sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==",
       "dev": true,
       "engines": {
         "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
@@ -1207,20 +1210,20 @@
       }
     },
     "node_modules/@nextui-org/autocomplete": {
-      "version": "2.0.9",
-      "resolved": "https://registry.npmjs.org/@nextui-org/autocomplete/-/autocomplete-2.0.9.tgz",
-      "integrity": "sha512-ViPXrZnP35k7LF+TBA4w8nqu0OEj9p1z9Rt7rwrACmY2VmDGY6h6a6nDCMjhuTVXptftRvzxfIPsIyzBYqxb0g==",
+      "version": "2.0.10",
+      "resolved": "https://registry.npmjs.org/@nextui-org/autocomplete/-/autocomplete-2.0.10.tgz",
+      "integrity": "sha512-nQr8VC5RtpjnPef1qXgjNxRAw8JbN6q5qIFtsHWOCzvvn5jGAtdxkAkNE4C7DTvlMWZkIlEuR4DyAmFfY8CChQ==",
       "dependencies": {
         "@nextui-org/aria-utils": "2.0.15",
-        "@nextui-org/button": "2.0.26",
-        "@nextui-org/input": "2.1.16",
+        "@nextui-org/button": "2.0.27",
+        "@nextui-org/input": "2.1.17",
         "@nextui-org/listbox": "2.1.16",
-        "@nextui-org/popover": "2.1.14",
+        "@nextui-org/popover": "2.1.15",
         "@nextui-org/react-utils": "2.0.10",
-        "@nextui-org/scroll-shadow": "2.1.12",
+        "@nextui-org/scroll-shadow": "2.1.13",
         "@nextui-org/shared-icons": "2.0.6",
         "@nextui-org/shared-utils": "2.0.4",
-        "@nextui-org/spinner": "2.0.24",
+        "@nextui-org/spinner": "2.0.25",
         "@nextui-org/use-aria-button": "2.0.6",
         "@react-aria/combobox": "^3.7.1",
         "@react-aria/focus": "^3.14.3",
@@ -1296,14 +1299,14 @@
       }
     },
     "node_modules/@nextui-org/button": {
-      "version": "2.0.26",
-      "resolved": "https://registry.npmjs.org/@nextui-org/button/-/button-2.0.26.tgz",
-      "integrity": "sha512-mDrSII1oneY4omwDdxUhl5oLa3AhoWCchwV/jt7egunnAFie32HbTqfFYGpLGiJw3JMMh3WDUthrI1islVTRKA==",
+      "version": "2.0.27",
+      "resolved": "https://registry.npmjs.org/@nextui-org/button/-/button-2.0.27.tgz",
+      "integrity": "sha512-oErzUr9KtE/qjUx4dSbalphxURssxGf9tv0mW++ZMkmVX1E6i887FwZb9xAVm9oBwYwR6+xpJaqjQLmt8aN/rQ==",
       "dependencies": {
         "@nextui-org/react-utils": "2.0.10",
         "@nextui-org/ripple": "2.0.24",
         "@nextui-org/shared-utils": "2.0.4",
-        "@nextui-org/spinner": "2.0.24",
+        "@nextui-org/spinner": "2.0.25",
         "@nextui-org/use-aria-button": "2.0.6",
         "@react-aria/button": "^3.8.4",
         "@react-aria/focus": "^3.14.3",
@@ -1421,12 +1424,12 @@
       }
     },
     "node_modules/@nextui-org/dropdown": {
-      "version": "2.1.16",
-      "resolved": "https://registry.npmjs.org/@nextui-org/dropdown/-/dropdown-2.1.16.tgz",
-      "integrity": "sha512-3KINNvC7Cz+deQltCM8gaB7iJCfU4Qsp1fwnoy1wUEjeZhEtPOPR59oTyqT+gPaPIisP1+LLOfcqRl4jNQoVXw==",
+      "version": "2.1.17",
+      "resolved": "https://registry.npmjs.org/@nextui-org/dropdown/-/dropdown-2.1.17.tgz",
+      "integrity": "sha512-Hxmz1Yf/LjjOLqWRF49Q5ZYJtae6ydDEk1mv8oMKNmSWHi92lrgmHlwkGvR3mjczbRuF+WkXHLEhVZH6/tZQ7A==",
       "dependencies": {
         "@nextui-org/menu": "2.0.17",
-        "@nextui-org/popover": "2.1.14",
+        "@nextui-org/popover": "2.1.15",
         "@nextui-org/react-utils": "2.0.10",
         "@nextui-org/shared-utils": "2.0.4",
         "@react-aria/focus": "^3.14.3",
@@ -1474,9 +1477,9 @@
       }
     },
     "node_modules/@nextui-org/input": {
-      "version": "2.1.16",
-      "resolved": "https://registry.npmjs.org/@nextui-org/input/-/input-2.1.16.tgz",
-      "integrity": "sha512-nUTlAvsXj5t88ycvQdICxf78/pko6Wznx2OomvYjb3E45eb77twQcWUDhydkJCWIh3b4AhGHSMM6GYxwWUgMDA==",
+      "version": "2.1.17",
+      "resolved": "https://registry.npmjs.org/@nextui-org/input/-/input-2.1.17.tgz",
+      "integrity": "sha512-3FW3NDDbQOa5IlUCpO2Ma/XEjGnx4TQLM8MvMbskc+GNbZ0mtzfV0hCeQkqxxJ2lP4Mkp4QhwGRRkRrDu1G0Wg==",
       "dependencies": {
         "@nextui-org/react-utils": "2.0.10",
         "@nextui-org/shared-icons": "2.0.6",
@@ -1588,9 +1591,9 @@
       }
     },
     "node_modules/@nextui-org/modal": {
-      "version": "2.0.28",
-      "resolved": "https://registry.npmjs.org/@nextui-org/modal/-/modal-2.0.28.tgz",
-      "integrity": "sha512-unfP0EMF3FDg5CkRqou03s4/BopWbaBTeVIMZeA2A1WF5teHUOmpLdp44Z1KOoWB1RVMDVd4JeoauNHNhJMp0g==",
+      "version": "2.0.29",
+      "resolved": "https://registry.npmjs.org/@nextui-org/modal/-/modal-2.0.29.tgz",
+      "integrity": "sha512-C/pvw0fAPWKbfMoGfIVZWhMRbe+DRGEg7GqPVY7EmW4FSSIK7Sfdn6Jxm+sSv+a7xHpDr86nirFbvN3S4jCaHw==",
       "dependencies": {
         "@nextui-org/framer-transitions": "2.0.15",
         "@nextui-org/react-utils": "2.0.10",
@@ -1643,16 +1646,17 @@
       }
     },
     "node_modules/@nextui-org/pagination": {
-      "version": "2.0.26",
-      "resolved": "https://registry.npmjs.org/@nextui-org/pagination/-/pagination-2.0.26.tgz",
-      "integrity": "sha512-OVpkpXqUKRuMRIcYESBAL95d3pqZ17SKAyNINMiJ/DwWnrzJu/LXGmFwTuYRoBdqHFlm7guGqZbHmAkcS/Fgow==",
+      "version": "2.0.27",
+      "resolved": "https://registry.npmjs.org/@nextui-org/pagination/-/pagination-2.0.27.tgz",
+      "integrity": "sha512-v1tSsb0Q863/gKVUxuN7FcE1TZWuvcbWZOrWjKe0/llRgfZ23/4KD1AmFyYuKo5RDFt+i1JWSfzAu08j0Hzzqg==",
       "dependencies": {
         "@nextui-org/react-utils": "2.0.10",
         "@nextui-org/shared-icons": "2.0.6",
         "@nextui-org/shared-utils": "2.0.4",
         "@nextui-org/use-aria-press": "2.0.1",
-        "@nextui-org/use-pagination": "2.0.4",
+        "@nextui-org/use-pagination": "2.0.5",
         "@react-aria/focus": "^3.14.3",
+        "@react-aria/i18n": "^3.8.4",
         "@react-aria/interactions": "^3.19.1",
         "@react-aria/utils": "^3.21.1",
         "scroll-into-view-if-needed": "3.0.10"
@@ -1665,16 +1669,17 @@
       }
     },
     "node_modules/@nextui-org/popover": {
-      "version": "2.1.14",
-      "resolved": "https://registry.npmjs.org/@nextui-org/popover/-/popover-2.1.14.tgz",
-      "integrity": "sha512-fqqktFQ/chIBS9Y3MghL6KX6qAy3hodtXUDchnxLa1GL+oi6TCBLUjo+wgI5EMJrTTbqo/eFLui/Ks00JfCj+A==",
+      "version": "2.1.15",
+      "resolved": "https://registry.npmjs.org/@nextui-org/popover/-/popover-2.1.15.tgz",
+      "integrity": "sha512-FQ66y49sQvXvyDrEsEFAC0qfpl2X+5ZPGaVXdNd3Cjox/jxAxp93cSUkk0iOfYvdsbO5zVFjuM0L3Dqn4hsHMw==",
       "dependencies": {
         "@nextui-org/aria-utils": "2.0.15",
-        "@nextui-org/button": "2.0.26",
+        "@nextui-org/button": "2.0.27",
         "@nextui-org/framer-transitions": "2.0.15",
         "@nextui-org/react-utils": "2.0.10",
         "@nextui-org/shared-utils": "2.0.4",
         "@nextui-org/use-aria-button": "2.0.6",
+        "@nextui-org/use-safe-layout-effect": "2.0.4",
         "@react-aria/dialog": "^3.5.7",
         "@react-aria/focus": "^3.14.3",
         "@react-aria/interactions": "^3.19.1",
@@ -1694,9 +1699,9 @@
       }
     },
     "node_modules/@nextui-org/progress": {
-      "version": "2.0.24",
-      "resolved": "https://registry.npmjs.org/@nextui-org/progress/-/progress-2.0.24.tgz",
-      "integrity": "sha512-RPVsFCF8COFClS/8PqEepzryhDFtIcJGQLu/P+qAr7jIDlXizXaBDrp0X34GVtQsapNeE9ExxX9Kt+QIspuHHQ==",
+      "version": "2.0.25",
+      "resolved": "https://registry.npmjs.org/@nextui-org/progress/-/progress-2.0.25.tgz",
+      "integrity": "sha512-EFVxwT0CXq+2scPLhKKRHkWb6xNa6Vjx+HdgSg3l4lgAxAUryvdfksjW8vjxn6x4I2rGbdzAYPEu27p2KaK7jg==",
       "dependencies": {
         "@nextui-org/react-utils": "2.0.10",
         "@nextui-org/shared-utils": "2.0.4",
@@ -1738,48 +1743,48 @@
       }
     },
     "node_modules/@nextui-org/react": {
-      "version": "2.2.9",
-      "resolved": "https://registry.npmjs.org/@nextui-org/react/-/react-2.2.9.tgz",
-      "integrity": "sha512-QHkUQTxI9sYoVjrvTpYm5K68pMDRqD13+DVzdsrkJuETGhbvE2c2CCGc4on9EwXC3JsOxuP/OyqaAmOIuHhYkA==",
+      "version": "2.2.10",
+      "resolved": "https://registry.npmjs.org/@nextui-org/react/-/react-2.2.10.tgz",
+      "integrity": "sha512-YJhUIeLnO/FGDbZgfeWEz32RBrH2YFA1qsJQtMF7mza8rjspX/CkankvI7xs1o6sW/TYLSTq7sOF9RGMxLTIAA==",
       "dependencies": {
         "@nextui-org/accordion": "2.0.28",
-        "@nextui-org/autocomplete": "2.0.9",
+        "@nextui-org/autocomplete": "2.0.10",
         "@nextui-org/avatar": "2.0.24",
         "@nextui-org/badge": "2.0.24",
         "@nextui-org/breadcrumbs": "2.0.4",
-        "@nextui-org/button": "2.0.26",
+        "@nextui-org/button": "2.0.27",
         "@nextui-org/card": "2.0.24",
         "@nextui-org/checkbox": "2.0.25",
         "@nextui-org/chip": "2.0.25",
         "@nextui-org/code": "2.0.24",
         "@nextui-org/divider": "2.0.25",
-        "@nextui-org/dropdown": "2.1.16",
+        "@nextui-org/dropdown": "2.1.17",
         "@nextui-org/image": "2.0.24",
-        "@nextui-org/input": "2.1.16",
+        "@nextui-org/input": "2.1.17",
         "@nextui-org/kbd": "2.0.25",
         "@nextui-org/link": "2.0.26",
         "@nextui-org/listbox": "2.1.16",
         "@nextui-org/menu": "2.0.17",
-        "@nextui-org/modal": "2.0.28",
+        "@nextui-org/modal": "2.0.29",
         "@nextui-org/navbar": "2.0.27",
-        "@nextui-org/pagination": "2.0.26",
-        "@nextui-org/popover": "2.1.14",
-        "@nextui-org/progress": "2.0.24",
+        "@nextui-org/pagination": "2.0.27",
+        "@nextui-org/popover": "2.1.15",
+        "@nextui-org/progress": "2.0.25",
         "@nextui-org/radio": "2.0.25",
         "@nextui-org/ripple": "2.0.24",
-        "@nextui-org/scroll-shadow": "2.1.12",
-        "@nextui-org/select": "2.1.20",
+        "@nextui-org/scroll-shadow": "2.1.13",
+        "@nextui-org/select": "2.1.21",
         "@nextui-org/skeleton": "2.0.24",
-        "@nextui-org/slider": "2.2.5",
-        "@nextui-org/snippet": "2.0.30",
+        "@nextui-org/slider": "2.2.6",
+        "@nextui-org/snippet": "2.0.31",
         "@nextui-org/spacer": "2.0.24",
-        "@nextui-org/spinner": "2.0.24",
+        "@nextui-org/spinner": "2.0.25",
         "@nextui-org/switch": "2.0.25",
         "@nextui-org/system": "2.0.15",
         "@nextui-org/table": "2.0.28",
         "@nextui-org/tabs": "2.0.26",
-        "@nextui-org/theme": "2.1.17",
-        "@nextui-org/tooltip": "2.0.29",
+        "@nextui-org/theme": "2.1.18",
+        "@nextui-org/tooltip": "2.0.30",
         "@nextui-org/user": "2.0.25",
         "@react-aria/visually-hidden": "^3.8.6"
       },
@@ -1823,13 +1828,13 @@
       }
     },
     "node_modules/@nextui-org/scroll-shadow": {
-      "version": "2.1.12",
-      "resolved": "https://registry.npmjs.org/@nextui-org/scroll-shadow/-/scroll-shadow-2.1.12.tgz",
-      "integrity": "sha512-uxT8D+WCWeBy4xaFDfqVpBgjjHZUwydXsX5HhbzZCBir/1eRG5GMnUES3w98DSwcUVadG64gAVsyGW4HmSZw1Q==",
+      "version": "2.1.13",
+      "resolved": "https://registry.npmjs.org/@nextui-org/scroll-shadow/-/scroll-shadow-2.1.13.tgz",
+      "integrity": "sha512-hFoVGplGMWuE+KXRz9gtKRq3e0YYkxutrqjDD0BiDHk4WkiyOrTnNuE6wnJTnd6Hd+kavLPBDu2+yGauDb7/Qg==",
       "dependencies": {
         "@nextui-org/react-utils": "2.0.10",
         "@nextui-org/shared-utils": "2.0.4",
-        "@nextui-org/use-data-scroll-overflow": "2.1.2"
+        "@nextui-org/use-data-scroll-overflow": "2.1.3"
       },
       "peerDependencies": {
         "@nextui-org/system": ">=2.0.0",
@@ -1839,20 +1844,20 @@
       }
     },
     "node_modules/@nextui-org/select": {
-      "version": "2.1.20",
-      "resolved": "https://registry.npmjs.org/@nextui-org/select/-/select-2.1.20.tgz",
-      "integrity": "sha512-GCO9uzyYnFIdJTqIe6aDe2NnYlclcdYfZnECFAze/R2MW0jpoysk5ysGBDjVDmZis6tLu+BOFXJbIlYEi+LoUQ==",
+      "version": "2.1.21",
+      "resolved": "https://registry.npmjs.org/@nextui-org/select/-/select-2.1.21.tgz",
+      "integrity": "sha512-BVfmxIsZTL6dBiZ1Q5RbAnqiNpVnaJgWi0M1QMV448FHMaDHLTWtNOJPMD0QyxHRNPfDgFrqEAq6a1+pA26ckQ==",
       "dependencies": {
         "@nextui-org/aria-utils": "2.0.15",
         "@nextui-org/listbox": "2.1.16",
-        "@nextui-org/popover": "2.1.14",
+        "@nextui-org/popover": "2.1.15",
         "@nextui-org/react-utils": "2.0.10",
-        "@nextui-org/scroll-shadow": "2.1.12",
+        "@nextui-org/scroll-shadow": "2.1.13",
         "@nextui-org/shared-icons": "2.0.6",
         "@nextui-org/shared-utils": "2.0.4",
-        "@nextui-org/spinner": "2.0.24",
+        "@nextui-org/spinner": "2.0.25",
         "@nextui-org/use-aria-button": "2.0.6",
-        "@nextui-org/use-aria-multiselect": "2.1.3",
+        "@nextui-org/use-aria-multiselect": "2.1.4",
         "@react-aria/focus": "^3.14.3",
         "@react-aria/interactions": "^3.19.1",
         "@react-aria/utils": "^3.21.1",
@@ -1899,13 +1904,13 @@
       }
     },
     "node_modules/@nextui-org/slider": {
-      "version": "2.2.5",
-      "resolved": "https://registry.npmjs.org/@nextui-org/slider/-/slider-2.2.5.tgz",
-      "integrity": "sha512-dC6HHMmtn2WvxDmbY/Dq51XJjQ7cAnjZsuYVIvhwIiCLDG8QnEIhmYN0DQp/6oeZsCHnyMHC4DmtgOiJL0eXrQ==",
+      "version": "2.2.6",
+      "resolved": "https://registry.npmjs.org/@nextui-org/slider/-/slider-2.2.6.tgz",
+      "integrity": "sha512-adCjQ8k4bUwWcvmOJUki3+UVsCz4ms+qLG4jnY2wClPdQAwISMbZzQsuv3km+1HIZE5Ja7jzeeT/dMd8l3n+bg==",
       "dependencies": {
         "@nextui-org/react-utils": "2.0.10",
         "@nextui-org/shared-utils": "2.0.4",
-        "@nextui-org/tooltip": "2.0.29",
+        "@nextui-org/tooltip": "2.0.30",
         "@nextui-org/use-aria-press": "2.0.1",
         "@react-aria/focus": "^3.14.3",
         "@react-aria/i18n": "^3.8.4",
@@ -1923,15 +1928,15 @@
       }
     },
     "node_modules/@nextui-org/snippet": {
-      "version": "2.0.30",
-      "resolved": "https://registry.npmjs.org/@nextui-org/snippet/-/snippet-2.0.30.tgz",
-      "integrity": "sha512-8hKxqKpbJIMqFVedzYj90T4td+TkWdOdyYD9+VjywMdezAjsWdr8tqQj7boaMFjVNVSG+Pnw55Pgg/vkpc21aw==",
+      "version": "2.0.31",
+      "resolved": "https://registry.npmjs.org/@nextui-org/snippet/-/snippet-2.0.31.tgz",
+      "integrity": "sha512-WooH5cqlHoa6SqUhzseKY7g1ah8kzSv382u95Or9kIgSirEZCrjygup3nFeKTMAe01NZoAz3OOYO7XNFWJ57vA==",
       "dependencies": {
-        "@nextui-org/button": "2.0.26",
+        "@nextui-org/button": "2.0.27",
         "@nextui-org/react-utils": "2.0.10",
         "@nextui-org/shared-icons": "2.0.6",
         "@nextui-org/shared-utils": "2.0.4",
-        "@nextui-org/tooltip": "2.0.29",
+        "@nextui-org/tooltip": "2.0.30",
         "@nextui-org/use-clipboard": "2.0.4",
         "@react-aria/focus": "^3.14.3",
         "@react-aria/utils": "^3.21.1"
@@ -1960,9 +1965,9 @@
       }
     },
     "node_modules/@nextui-org/spinner": {
-      "version": "2.0.24",
-      "resolved": "https://registry.npmjs.org/@nextui-org/spinner/-/spinner-2.0.24.tgz",
-      "integrity": "sha512-s/q2FmxGPNEqA0ifWfc7xgs5a5D9c3xKkxL3n7jDoRnWo0NPlRsa6QRJGiSL5dHNoUqspRf/lNw2V94Bxk86Pg==",
+      "version": "2.0.25",
+      "resolved": "https://registry.npmjs.org/@nextui-org/spinner/-/spinner-2.0.25.tgz",
+      "integrity": "sha512-s2iqaB71sanRxglJtG4UZF+Rz/W6UxnYegbkhnkkljH20vhOcrhwm5jKGStq8jkata8UZ0ajS67H8KY8lHV8nw==",
       "dependencies": {
         "@nextui-org/react-utils": "2.0.10",
         "@nextui-org/shared-utils": "2.0.4",
@@ -2082,9 +2087,9 @@
       }
     },
     "node_modules/@nextui-org/theme": {
-      "version": "2.1.17",
-      "resolved": "https://registry.npmjs.org/@nextui-org/theme/-/theme-2.1.17.tgz",
-      "integrity": "sha512-/WeHcMrAcWPGsEVn9M9TnvxKkaYkCocBH9JrDYCEFQoJgleUzHd4nVk7MWtpSOYJXLUzUMY1M9AqAK3jBkw+5g==",
+      "version": "2.1.18",
+      "resolved": "https://registry.npmjs.org/@nextui-org/theme/-/theme-2.1.18.tgz",
+      "integrity": "sha512-2ptDh350lVD0yejZTpGv4fkeoGKB8+B/Coblzpjijfofn/t6MQIRIRRLp04wCCa/IbeevjS2wyadWpMDtVh3CQ==",
       "dependencies": {
         "color": "^4.2.3",
         "color2k": "^2.0.2",
@@ -2126,14 +2131,15 @@
       }
     },
     "node_modules/@nextui-org/tooltip": {
-      "version": "2.0.29",
-      "resolved": "https://registry.npmjs.org/@nextui-org/tooltip/-/tooltip-2.0.29.tgz",
-      "integrity": "sha512-LaFyS5bXhcZFXP9rnh6pTKsYX6siWjzEe5z72FIOyAV2yvv2yhkRiO/mEHKI8moo+/tScW/6muFXsvbEalPefg==",
+      "version": "2.0.30",
+      "resolved": "https://registry.npmjs.org/@nextui-org/tooltip/-/tooltip-2.0.30.tgz",
+      "integrity": "sha512-V3N9o/oNU1Y11etiilrlqt5dF4/o9eJSttgN2CPo8eRAPc96+sRpdGPGX3XcLJZNFRcNx8BkD/bcEUcrDdjmRA==",
       "dependencies": {
         "@nextui-org/aria-utils": "2.0.15",
         "@nextui-org/framer-transitions": "2.0.15",
         "@nextui-org/react-utils": "2.0.10",
         "@nextui-org/shared-utils": "2.0.4",
+        "@nextui-org/use-safe-layout-effect": "2.0.4",
         "@react-aria/interactions": "^3.19.1",
         "@react-aria/overlays": "^3.18.1",
         "@react-aria/tooltip": "^3.6.4",
@@ -2215,9 +2221,9 @@
       }
     },
     "node_modules/@nextui-org/use-aria-multiselect": {
-      "version": "2.1.3",
-      "resolved": "https://registry.npmjs.org/@nextui-org/use-aria-multiselect/-/use-aria-multiselect-2.1.3.tgz",
-      "integrity": "sha512-OM1lj2jdl0Q2Zme/ds6qyT4IIGsBJSGNjvkM6pEnpdyoej/HwTKsSEpEFTDGJ5t9J9DWWCEt3hz0uJxOPnZ66Q==",
+      "version": "2.1.4",
+      "resolved": "https://registry.npmjs.org/@nextui-org/use-aria-multiselect/-/use-aria-multiselect-2.1.4.tgz",
+      "integrity": "sha512-F95sF4eY5TLkom5tIMb+eoT4i0Cc4qygnQRqIosg8OryDbH62/MV4x88GjQsgDCY8dNeWCNVodHXxaWmVSAgyQ==",
       "dependencies": {
         "@react-aria/i18n": "^3.8.4",
         "@react-aria/interactions": "^3.19.1",
@@ -2287,9 +2293,9 @@
       }
     },
     "node_modules/@nextui-org/use-data-scroll-overflow": {
-      "version": "2.1.2",
-      "resolved": "https://registry.npmjs.org/@nextui-org/use-data-scroll-overflow/-/use-data-scroll-overflow-2.1.2.tgz",
-      "integrity": "sha512-3h9QX+dWkfqnqciQc2KeeR67e77hobjefNHGBTDuB4LhJSJ180ToZH09SQNHaUmKRLTU/RABjGWXxdbORI0r6g==",
+      "version": "2.1.3",
+      "resolved": "https://registry.npmjs.org/@nextui-org/use-data-scroll-overflow/-/use-data-scroll-overflow-2.1.3.tgz",
+      "integrity": "sha512-f4rDr4MHGQTyqTd6L4MpKAcKfPDiVeWfYXXXX6gdN8UVTk+PzW675Fe+l7ATBgmaVTn1AEPJwW9dDUJcDpn21g==",
       "dependencies": {
         "@nextui-org/shared-utils": "2.0.4"
       },
@@ -2341,11 +2347,12 @@
       }
     },
     "node_modules/@nextui-org/use-pagination": {
-      "version": "2.0.4",
-      "resolved": "https://registry.npmjs.org/@nextui-org/use-pagination/-/use-pagination-2.0.4.tgz",
-      "integrity": "sha512-EETHzhh+LW8u2bm93LkUABbu0pIoWBCeY8hmvgjhhNMkILuwZNGYnp9tdF2rcS2P4KDlHQkIQcoiOGrGMqBUaQ==",
+      "version": "2.0.5",
+      "resolved": "https://registry.npmjs.org/@nextui-org/use-pagination/-/use-pagination-2.0.5.tgz",
+      "integrity": "sha512-wH0sC85XeTPPE4zRq0ycAVB+SpmPEiSmTEGxpBG2sqiJlsrNfEeXvTKf73INXM4IWfP53ONAQ7Nd1T7EVuYSkw==",
       "dependencies": {
-        "@nextui-org/shared-utils": "2.0.4"
+        "@nextui-org/shared-utils": "2.0.4",
+        "@react-aria/i18n": "^3.8.4"
       },
       "peerDependencies": {
         "react": ">=18"
@@ -4062,22 +4069,22 @@
       "devOptional": true
     },
     "node_modules/@types/semver": {
-      "version": "7.5.7",
-      "resolved": "https://registry.npmjs.org/@types/semver/-/semver-7.5.7.tgz",
-      "integrity": "sha512-/wdoPq1QqkSj9/QOeKkFquEuPzQbHTWAMPH/PaUMB+JuR31lXhlWXRZ52IpfDYVlDOUBvX09uBrPwxGT1hjNBg==",
+      "version": "7.5.8",
+      "resolved": "https://registry.npmjs.org/@types/semver/-/semver-7.5.8.tgz",
+      "integrity": "sha512-I8EUhyrgfLrcTkzV3TSsGyl1tSuPrEDzr0yd5m90UgNxQkyDXULk3b6MlQqTCpZpNtWe1K0hzclnZkTcLBe2UQ==",
       "dev": true
     },
     "node_modules/@typescript-eslint/eslint-plugin": {
-      "version": "6.21.0",
-      "resolved": "https://registry.npmjs.org/@typescript-eslint/eslint-plugin/-/eslint-plugin-6.21.0.tgz",
-      "integrity": "sha512-oy9+hTPCUFpngkEZUSzbf9MxI65wbKFoQYsgPdILTfbUldp5ovUuphZVe4i30emU9M/kP+T64Di0mxl7dSw3MA==",
+      "version": "7.1.1",
+      "resolved": "https://registry.npmjs.org/@typescript-eslint/eslint-plugin/-/eslint-plugin-7.1.1.tgz",
+      "integrity": "sha512-zioDz623d0RHNhvx0eesUmGfIjzrk18nSBC8xewepKXbBvN/7c1qImV7Hg8TI1URTxKax7/zxfxj3Uph8Chcuw==",
       "dev": true,
       "dependencies": {
         "@eslint-community/regexpp": "^4.5.1",
-        "@typescript-eslint/scope-manager": "6.21.0",
-        "@typescript-eslint/type-utils": "6.21.0",
-        "@typescript-eslint/utils": "6.21.0",
-        "@typescript-eslint/visitor-keys": "6.21.0",
+        "@typescript-eslint/scope-manager": "7.1.1",
+        "@typescript-eslint/type-utils": "7.1.1",
+        "@typescript-eslint/utils": "7.1.1",
+        "@typescript-eslint/visitor-keys": "7.1.1",
         "debug": "^4.3.4",
         "graphemer": "^1.4.0",
         "ignore": "^5.2.4",
@@ -4093,8 +4100,8 @@
         "url": "https://opencollective.com/typescript-eslint"
       },
       "peerDependencies": {
-        "@typescript-eslint/parser": "^6.0.0 || ^6.0.0-alpha",
-        "eslint": "^7.0.0 || ^8.0.0"
+        "@typescript-eslint/parser": "^7.0.0",
+        "eslint": "^8.56.0"
       },
       "peerDependenciesMeta": {
         "typescript": {
@@ -4103,15 +4110,15 @@
       }
     },
     "node_modules/@typescript-eslint/parser": {
-      "version": "6.21.0",
-      "resolved": "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-6.21.0.tgz",
-      "integrity": "sha512-tbsV1jPne5CkFQCgPBcDOt30ItF7aJoZL997JSF7MhGQqOeT3svWRYxiqlfA5RUdlHN6Fi+EI9bxqbdyAUZjYQ==",
+      "version": "7.1.1",
+      "resolved": "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-7.1.1.tgz",
+      "integrity": "sha512-ZWUFyL0z04R1nAEgr9e79YtV5LbafdOtN7yapNbn1ansMyaegl2D4bL7vHoJ4HPSc4CaLwuCVas8CVuneKzplQ==",
       "dev": true,
       "dependencies": {
-        "@typescript-eslint/scope-manager": "6.21.0",
-        "@typescript-eslint/types": "6.21.0",
-        "@typescript-eslint/typescript-estree": "6.21.0",
-        "@typescript-eslint/visitor-keys": "6.21.0",
+        "@typescript-eslint/scope-manager": "7.1.1",
+        "@typescript-eslint/types": "7.1.1",
+        "@typescript-eslint/typescript-estree": "7.1.1",
+        "@typescript-eslint/visitor-keys": "7.1.1",
         "debug": "^4.3.4"
       },
       "engines": {
@@ -4122,7 +4129,7 @@
         "url": "https://opencollective.com/typescript-eslint"
       },
       "peerDependencies": {
-        "eslint": "^7.0.0 || ^8.0.0"
+        "eslint": "^8.56.0"
       },
       "peerDependenciesMeta": {
         "typescript": {
@@ -4131,13 +4138,13 @@
       }
     },
     "node_modules/@typescript-eslint/scope-manager": {
-      "version": "6.21.0",
-      "resolved": "https://registry.npmjs.org/@typescript-eslint/scope-manager/-/scope-manager-6.21.0.tgz",
-      "integrity": "sha512-OwLUIWZJry80O99zvqXVEioyniJMa+d2GrqpUTqi5/v5D5rOrppJVBPa0yKCblcigC0/aYAzxxqQ1B+DS2RYsg==",
+      "version": "7.1.1",
+      "resolved": "https://registry.npmjs.org/@typescript-eslint/scope-manager/-/scope-manager-7.1.1.tgz",
+      "integrity": "sha512-cirZpA8bJMRb4WZ+rO6+mnOJrGFDd38WoXCEI57+CYBqta8Yc8aJym2i7vyqLL1vVYljgw0X27axkUXz32T8TA==",
       "dev": true,
       "dependencies": {
-        "@typescript-eslint/types": "6.21.0",
-        "@typescript-eslint/visitor-keys": "6.21.0"
+        "@typescript-eslint/types": "7.1.1",
+        "@typescript-eslint/visitor-keys": "7.1.1"
       },
       "engines": {
         "node": "^16.0.0 || >=18.0.0"
@@ -4148,13 +4155,13 @@
       }
     },
     "node_modules/@typescript-eslint/type-utils": {
-      "version": "6.21.0",
-      "resolved": "https://registry.npmjs.org/@typescript-eslint/type-utils/-/type-utils-6.21.0.tgz",
-      "integrity": "sha512-rZQI7wHfao8qMX3Rd3xqeYSMCL3SoiSQLBATSiVKARdFGCYSRvmViieZjqc58jKgs8Y8i9YvVVhRbHSTA4VBag==",
+      "version": "7.1.1",
+      "resolved": "https://registry.npmjs.org/@typescript-eslint/type-utils/-/type-utils-7.1.1.tgz",
+      "integrity": "sha512-5r4RKze6XHEEhlZnJtR3GYeCh1IueUHdbrukV2KSlLXaTjuSfeVF8mZUVPLovidCuZfbVjfhi4c0DNSa/Rdg5g==",
       "dev": true,
       "dependencies": {
-        "@typescript-eslint/typescript-estree": "6.21.0",
-        "@typescript-eslint/utils": "6.21.0",
+        "@typescript-eslint/typescript-estree": "7.1.1",
+        "@typescript-eslint/utils": "7.1.1",
         "debug": "^4.3.4",
         "ts-api-utils": "^1.0.1"
       },
@@ -4166,7 +4173,7 @@
         "url": "https://opencollective.com/typescript-eslint"
       },
       "peerDependencies": {
-        "eslint": "^7.0.0 || ^8.0.0"
+        "eslint": "^8.56.0"
       },
       "peerDependenciesMeta": {
         "typescript": {
@@ -4175,9 +4182,9 @@
       }
     },
     "node_modules/@typescript-eslint/types": {
-      "version": "6.21.0",
-      "resolved": "https://registry.npmjs.org/@typescript-eslint/types/-/types-6.21.0.tgz",
-      "integrity": "sha512-1kFmZ1rOm5epu9NZEZm1kckCDGj5UJEf7P1kliH4LKu/RkwpsfqqGmY2OOcUs18lSlQBKLDYBOGxRVtrMN5lpg==",
+      "version": "7.1.1",
+      "resolved": "https://registry.npmjs.org/@typescript-eslint/types/-/types-7.1.1.tgz",
+      "integrity": "sha512-KhewzrlRMrgeKm1U9bh2z5aoL4s7K3tK5DwHDn8MHv0yQfWFz/0ZR6trrIHHa5CsF83j/GgHqzdbzCXJ3crx0Q==",
       "dev": true,
       "engines": {
         "node": "^16.0.0 || >=18.0.0"
@@ -4188,13 +4195,13 @@
       }
     },
     "node_modules/@typescript-eslint/typescript-estree": {
-      "version": "6.21.0",
-      "resolved": "https://registry.npmjs.org/@typescript-eslint/typescript-estree/-/typescript-estree-6.21.0.tgz",
-      "integrity": "sha512-6npJTkZcO+y2/kr+z0hc4HwNfrrP4kNYh57ek7yCNlrBjWQ1Y0OS7jiZTkgumrvkX5HkEKXFZkkdFNkaW2wmUQ==",
+      "version": "7.1.1",
+      "resolved": "https://registry.npmjs.org/@typescript-eslint/typescript-estree/-/typescript-estree-7.1.1.tgz",
+      "integrity": "sha512-9ZOncVSfr+sMXVxxca2OJOPagRwT0u/UHikM2Rd6L/aB+kL/QAuTnsv6MeXtjzCJYb8PzrXarypSGIPx3Jemxw==",
       "dev": true,
       "dependencies": {
-        "@typescript-eslint/types": "6.21.0",
-        "@typescript-eslint/visitor-keys": "6.21.0",
+        "@typescript-eslint/types": "7.1.1",
+        "@typescript-eslint/visitor-keys": "7.1.1",
         "debug": "^4.3.4",
         "globby": "^11.1.0",
         "is-glob": "^4.0.3",
@@ -4216,17 +4223,17 @@
       }
     },
     "node_modules/@typescript-eslint/utils": {
-      "version": "6.21.0",
-      "resolved": "https://registry.npmjs.org/@typescript-eslint/utils/-/utils-6.21.0.tgz",
-      "integrity": "sha512-NfWVaC8HP9T8cbKQxHcsJBY5YE1O33+jpMwN45qzWWaPDZgLIbo12toGMWnmhvCpd3sIxkpDw3Wv1B3dYrbDQQ==",
+      "version": "7.1.1",
+      "resolved": "https://registry.npmjs.org/@typescript-eslint/utils/-/utils-7.1.1.tgz",
+      "integrity": "sha512-thOXM89xA03xAE0lW7alstvnyoBUbBX38YtY+zAUcpRPcq9EIhXPuJ0YTv948MbzmKh6e1AUszn5cBFK49Umqg==",
       "dev": true,
       "dependencies": {
         "@eslint-community/eslint-utils": "^4.4.0",
         "@types/json-schema": "^7.0.12",
         "@types/semver": "^7.5.0",
-        "@typescript-eslint/scope-manager": "6.21.0",
-        "@typescript-eslint/types": "6.21.0",
-        "@typescript-eslint/typescript-estree": "6.21.0",
+        "@typescript-eslint/scope-manager": "7.1.1",
+        "@typescript-eslint/types": "7.1.1",
+        "@typescript-eslint/typescript-estree": "7.1.1",
         "semver": "^7.5.4"
       },
       "engines": {
@@ -4237,16 +4244,16 @@
         "url": "https://opencollective.com/typescript-eslint"
       },
       "peerDependencies": {
-        "eslint": "^7.0.0 || ^8.0.0"
+        "eslint": "^8.56.0"
       }
     },
     "node_modules/@typescript-eslint/visitor-keys": {
-      "version": "6.21.0",
-      "resolved": "https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-6.21.0.tgz",
-      "integrity": "sha512-JJtkDduxLi9bivAB+cYOVMtbkqdPOhZ+ZI5LC47MIRrDV4Yn2o+ZnW10Nkmr28xRpSpdJ6Sm42Hjf2+REYXm0A==",
+      "version": "7.1.1",
+      "resolved": "https://registry.npmjs.org/@typescript-eslint/visitor-keys/-/visitor-keys-7.1.1.tgz",
+      "integrity": "sha512-yTdHDQxY7cSoCcAtiBzVzxleJhkGB9NncSIyMYe2+OGON1ZsP9zOPws/Pqgopa65jvknOjlk/w7ulPlZ78PiLQ==",
       "dev": true,
       "dependencies": {
-        "@typescript-eslint/types": "6.21.0",
+        "@typescript-eslint/types": "7.1.1",
         "eslint-visitor-keys": "^3.4.1"
       },
       "engines": {
@@ -4756,9 +4763,9 @@
       "dev": true
     },
     "node_modules/autoprefixer": {
-      "version": "10.4.17",
-      "resolved": "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.4.17.tgz",
-      "integrity": "sha512-/cpVNRLSfhOtcGflT13P2794gVSgmPgTR+erw5ifnMLZb0UnSlkK4tquLmkd3BhA+nLo5tX8Cu0upUsGKvKbmg==",
+      "version": "10.4.18",
+      "resolved": "https://registry.npmjs.org/autoprefixer/-/autoprefixer-10.4.18.tgz",
+      "integrity": "sha512-1DKbDfsr6KUElM6wg+0zRNkB/Q7WcKYAaK+pzXn+Xqmszm/5Xa9coeNdtP88Vi+dPzZnMjhge8GIV49ZQkDa+g==",
       "dev": true,
       "funding": [
         {
@@ -4775,8 +4782,8 @@
         }
       ],
       "dependencies": {
-        "browserslist": "^4.22.2",
-        "caniuse-lite": "^1.0.30001578",
+        "browserslist": "^4.23.0",
+        "caniuse-lite": "^1.0.30001591",
         "fraction.js": "^4.3.7",
         "normalize-range": "^0.1.2",
         "picocolors": "^1.0.0",
@@ -4926,9 +4933,9 @@
       }
     },
     "node_modules/caniuse-lite": {
-      "version": "1.0.30001588",
-      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001588.tgz",
-      "integrity": "sha512-+hVY9jE44uKLkH0SrUTqxjxqNTOWHsbnQDIKjwkZ3lNTzUUVdBLBGXtj/q5Mp5u98r3droaZAewQuEDzjQdZlQ==",
+      "version": "1.0.30001594",
+      "resolved": "https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001594.tgz",
+      "integrity": "sha512-VblSX6nYqyJVs8DKFMldE2IVCJjZ225LW00ydtUWwh5hk9IfkTOffO6r8gJNsH0qqqeAF8KrbMYA2VEwTlGW5g==",
       "funding": [
         {
           "type": "opencollective",
@@ -5592,16 +5599,16 @@
       }
     },
     "node_modules/eslint": {
-      "version": "8.56.0",
-      "resolved": "https://registry.npmjs.org/eslint/-/eslint-8.56.0.tgz",
-      "integrity": "sha512-Go19xM6T9puCOWntie1/P997aXxFsOi37JIHRWI514Hc6ZnaHGKY9xFhrU65RT6CcBEzZoGG1e6Nq+DT04ZtZQ==",
+      "version": "8.57.0",
+      "resolved": "https://registry.npmjs.org/eslint/-/eslint-8.57.0.tgz",
+      "integrity": "sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==",
       "dev": true,
       "dependencies": {
         "@eslint-community/eslint-utils": "^4.2.0",
         "@eslint-community/regexpp": "^4.6.1",
         "@eslint/eslintrc": "^2.1.4",
-        "@eslint/js": "8.56.0",
-        "@humanwhocodes/config-array": "^0.11.13",
+        "@eslint/js": "8.57.0",
+        "@humanwhocodes/config-array": "^0.11.14",
         "@humanwhocodes/module-importer": "^1.0.1",
         "@nodelib/fs.walk": "^1.2.8",
         "@ungap/structured-clone": "^1.2.0",
@@ -5644,6 +5651,18 @@
       },
       "funding": {
         "url": "https://opencollective.com/eslint"
+      }
+    },
+    "node_modules/eslint-config-prettier": {
+      "version": "9.1.0",
+      "resolved": "https://registry.npmjs.org/eslint-config-prettier/-/eslint-config-prettier-9.1.0.tgz",
+      "integrity": "sha512-NSWl5BFQWEPi1j4TjVNItzYV7dZXZ+wP6I6ZhrBGpChQhZRUaElihE9uRRkcbRnNb76UMKDF3r+WTmNcGPKsqw==",
+      "dev": true,
+      "bin": {
+        "eslint-config-prettier": "bin/cli.js"
+      },
+      "peerDependencies": {
+        "eslint": ">=7.0.0"
       }
     },
     "node_modules/eslint-import-resolver-node": {
@@ -5794,6 +5813,48 @@
       "dev": true,
       "peerDependencies": {
         "eslint": ">=7"
+      }
+    },
+    "node_modules/eslint-plugin-strict-dependencies": {
+      "version": "1.3.3",
+      "resolved": "https://registry.npmjs.org/eslint-plugin-strict-dependencies/-/eslint-plugin-strict-dependencies-1.3.3.tgz",
+      "integrity": "sha512-LAs2QI6Rra0ZYwXX5DUsLzURhSB7y5WDQpM9eU3HrnGOMnZ35gVA8w5VwL9RxXtUuXLUxWMFY1V6WZvJ7hSFcw==",
+      "dev": true,
+      "dependencies": {
+        "is-glob": "4.0.3",
+        "micromatch": "4.0.5",
+        "normalize-path": "3.0.0",
+        "require-strip-json-comments": "2.0.0"
+      }
+    },
+    "node_modules/eslint-plugin-unused-imports": {
+      "version": "3.1.0",
+      "resolved": "https://registry.npmjs.org/eslint-plugin-unused-imports/-/eslint-plugin-unused-imports-3.1.0.tgz",
+      "integrity": "sha512-9l1YFCzXKkw1qtAru1RWUtG2EVDZY0a0eChKXcL+EZ5jitG7qxdctu4RnvhOJHv4xfmUf7h+JJPINlVpGhZMrw==",
+      "dev": true,
+      "dependencies": {
+        "eslint-rule-composer": "^0.3.0"
+      },
+      "engines": {
+        "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
+      },
+      "peerDependencies": {
+        "@typescript-eslint/eslint-plugin": "6 - 7",
+        "eslint": "8"
+      },
+      "peerDependenciesMeta": {
+        "@typescript-eslint/eslint-plugin": {
+          "optional": true
+        }
+      }
+    },
+    "node_modules/eslint-rule-composer": {
+      "version": "0.3.0",
+      "resolved": "https://registry.npmjs.org/eslint-rule-composer/-/eslint-rule-composer-0.3.0.tgz",
+      "integrity": "sha512-bt+Sh8CtDmn2OajxvNO+BX7Wn4CIWMpTRm3MaiKPCQcnnlm0CS2mhui6QaoeQugs+3Kj2ESKEEGJUdVafwhiCg==",
+      "dev": true,
+      "engines": {
+        "node": ">=4.0.0"
       }
     },
     "node_modules/eslint-scope": {
@@ -6130,9 +6191,9 @@
       }
     },
     "node_modules/framer-motion": {
-      "version": "11.0.5",
-      "resolved": "https://registry.npmjs.org/framer-motion/-/framer-motion-11.0.5.tgz",
-      "integrity": "sha512-Lb0EYbQcSK/pgyQUJm+KzsQrKrJRX9sFRyzl9hSr9gFG4Mk8yP7BjhuxvRXzblOM/+JxycrJdCDVmOQBsjpYlw==",
+      "version": "11.0.8",
+      "resolved": "https://registry.npmjs.org/framer-motion/-/framer-motion-11.0.8.tgz",
+      "integrity": "sha512-1KSGNuqe1qZkS/SWQlDnqK2VCVzRVEoval379j0FiUBJAZoqgwyvqFkfvJbgW2IPFo4wX16K+M0k5jO23lCIjA==",
       "dependencies": {
         "tslib": "^2.4.0"
       },
@@ -8462,6 +8523,15 @@
         "url": "https://github.com/sponsors/ljharb"
       }
     },
+    "node_modules/require-strip-json-comments": {
+      "version": "2.0.0",
+      "resolved": "https://registry.npmjs.org/require-strip-json-comments/-/require-strip-json-comments-2.0.0.tgz",
+      "integrity": "sha512-Pta3KVBaVZ9DHMoOGRd+3PEc/EFZAQ1JVHQpKZfPo018fdT9iEsyPBzqNAgJAzKMF4kbr5G7GaqP0+UOwnGfPw==",
+      "dev": true,
+      "dependencies": {
+        "strip-json-comments": "^3.0"
+      }
+    },
     "node_modules/requires-port": {
       "version": "1.0.0",
       "resolved": "https://registry.npmjs.org/requires-port/-/requires-port-1.0.0.tgz",
@@ -9667,9 +9737,9 @@
       }
     },
     "node_modules/vite": {
-      "version": "5.1.3",
-      "resolved": "https://registry.npmjs.org/vite/-/vite-5.1.3.tgz",
-      "integrity": "sha512-UfmUD36DKkqhi/F75RrxvPpry+9+tTkrXfMNZD+SboZqBCMsxKtO52XeGzzuh7ioz+Eo/SYDBbdb0Z7vgcDJew==",
+      "version": "5.1.5",
+      "resolved": "https://registry.npmjs.org/vite/-/vite-5.1.5.tgz",
+      "integrity": "sha512-BdN1xh0Of/oQafhU+FvopafUp6WaYenLU/NFoL5WyJL++GxkNfieKzBhM24H3HVsPQrlAqB7iJYTHabzaRed5Q==",
       "dev": true,
       "dependencies": {
         "esbuild": "^0.19.3",

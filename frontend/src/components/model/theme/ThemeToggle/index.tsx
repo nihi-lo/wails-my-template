@@ -10,7 +10,7 @@ import { useTheme } from "next-themes";
 import { Key, useEffect, useState } from "react";
 import { IoHelpOutline, IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
 
-export const ThemeToggle = (): JSX.Element => {
+const ThemeToggle = (): JSX.Element => {
   const { setTheme, theme, systemTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [selectedKeys, setSelectedKeys] = useState(new Set([theme ?? ""]));
@@ -28,6 +28,7 @@ export const ThemeToggle = (): JSX.Element => {
           ? IoMoonOutline
           : IoHelpOutline;
 
+  /* Event handlers */
   const handleAction = (key: Key): void => {
     setTheme(key.toString());
   };
@@ -45,18 +46,11 @@ export const ThemeToggle = (): JSX.Element => {
   return (
     <Dropdown>
       <DropdownTrigger>
-        <Button
-          isIconOnly
-          variant="light"
-          aria-label="Theme"
-          isDisabled={!mounted}
-        >
-          <ThemeIcon className="size-6" />
+        <Button isIconOnly variant="ghost" isDisabled={!mounted}>
+          <ThemeIcon className="size-5" />
         </Button>
       </DropdownTrigger>
       <DropdownMenu
-        aria-label="Theme Toggle"
-        selectionMode="single"
         selectedKeys={selectedKeys}
         onAction={handleAction}
         onSelectionChange={handleSelectionChange}
@@ -68,3 +62,6 @@ export const ThemeToggle = (): JSX.Element => {
     </Dropdown>
   );
 };
+ThemeToggle.displayName = "ThemeToggle";
+
+export { ThemeToggle };

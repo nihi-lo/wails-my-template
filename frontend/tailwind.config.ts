@@ -8,10 +8,10 @@ const config = {
     "./src/**/*.{ts,tsx}",
     "./index.html",
   ],
-  darkMode: "class",
   theme: {
     extend: {},
   },
+  darkMode: "class",
   plugins: [nextui()],
 } satisfies Config;
 
