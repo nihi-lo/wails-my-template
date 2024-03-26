@@ -23,6 +23,12 @@ const config = {
   ],
   rules: {
     /* @typescript-eslint */
+    "@typescript-eslint/consistent-type-imports": [
+      "error",
+      {
+        fixStyle: "inline-type-imports",
+      },
+    ],
     "@typescript-eslint/explicit-module-boundary-types": "error",
     "@typescript-eslint/no-unused-vars": "off",
 
