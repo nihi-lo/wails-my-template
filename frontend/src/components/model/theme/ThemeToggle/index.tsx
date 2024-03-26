@@ -51,6 +51,7 @@ const ThemeToggle = (): JSX.Element => {
         </Button>
       </DropdownTrigger>
       <DropdownMenu
+        aria-label="Themes"
         selectedKeys={selectedKeys}
         selectionMode="single"
         onAction={handleAction}
