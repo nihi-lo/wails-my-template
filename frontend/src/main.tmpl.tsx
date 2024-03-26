@@ -1,18 +1,15 @@
-import { NextUIProvider } from "@nextui-org/react";
-import { ThemeProvider } from "next-themes";
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 
-import { RootPage } from "@{{.ProjectName}}/components/page";
+import App from "@{{.ProjectName}}/App";
 
-import "@{{.ProjectName}}/styles/globals.css";
+import "@{{.ProjectName}}/index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <ThemeProvider defaultTheme="system" attribute="class">
-      <NextUIProvider>
-        <RootPage />
-      </NextUIProvider>
-    </ThemeProvider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
 );

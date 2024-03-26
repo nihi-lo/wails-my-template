@@ -36,7 +36,12 @@ const config = {
         alphabetize: { order: "asc", caseInsensitive: true },
         pathGroups: [
           {
-            pattern: "@{{.ProjectName}}/components/**",
+            pattern: "@wailsjs/**",
+            group: "internal",
+            position: "before",
+          },
+          {
+            pattern: "@{{.ProjectName}}/App",
             group: "internal",
             position: "before",
           },
@@ -46,7 +51,7 @@ const config = {
             position: "before",
           },
           {
-            pattern: "@wailsjs/**",
+            pattern: "@{{.ProjectName}}/components/**",
             group: "internal",
             position: "before",
           },
@@ -68,7 +73,7 @@ const config = {
       [
         {
           module: "src/components/page",
-          allowReferenceFrom: ["src/main.tsx"],
+          allowReferenceFrom: ["src/App.tsx"],
           allowSameModule: false,
         },
         {
