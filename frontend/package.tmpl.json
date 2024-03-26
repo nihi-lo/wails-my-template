@@ -5,9 +5,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "check": "tsc && prettier . --check && npm run lint",
+    "check": "tsc && npm run lint && prettier . --check",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "format": "prettier . --write && npm run lint -- --fix",
+    "format": "npm run lint -- --fix && prettier . --write",
     "test": "vitest run",
     "test:ui": "vitest --ui --coverage",
     "preview": "vite preview"
