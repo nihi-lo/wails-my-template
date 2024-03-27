@@ -3,6 +3,8 @@ import { type ChangeEvent, useState } from "react";
 
 import { Greet } from "@wailsjs/go/main/App";
 
+import { useUserStore } from "@foo/hooks/useUserStore";
+
 import { SiteBody } from "@{{.ProjectName}}/components/model/site/SiteBody";
 import { SiteFooter } from "@{{.ProjectName}}/components/model/site/SiteFooter";
 import { SiteHeader } from "@{{.ProjectName}}/components/model/site/SiteHeader";
@@ -10,14 +12,15 @@ import { HStack, VStack } from "@{{.ProjectName}}/components/ui/layout";
 import { Heading } from "@{{.ProjectName}}/components/ui/typography";
 
 const RootPage = (): JSX.Element => {
-  const [resultText, setResultText] = useState("Please enter your name below 👇");
-  const [name, setName] = useState("");
+  /* React hooks */
+  const { name, updateName } = useUserStore(); // Global state
+  const [resultText, setResultText] = useState("Please enter your name below 👇"); // Local state
 
-  const handleChangeInput = (e: ChangeEvent<HTMLInputElement>) => {
-    setName(e.target.value);
+  /* Event handlers */
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+    updateName(e.target.value);
   };
-
-  const handleClickGreet = () => {
+  const handleGreetClick = () => {
     void Greet(name).then((result: string) => setResultText(result));
   };
 
@@ -32,8 +35,13 @@ const RootPage = (): JSX.Element => {
           <VStack align="center" justify="center" gap="sm">
             <div>{resultText}</div>
             <HStack align="center" justify="center" gap="sm">
-              <Input label="Name" labelPlacement="outside-left" onChange={handleChangeInput} />
-              <Button color="primary" onClick={handleClickGreet}>
+              <Input
+                label="Name"
+                labelPlacement="outside-left"
+                defaultValue={name}
+                onChange={handleInputChange}
+              />
+              <Button color="primary" onClick={handleGreetClick}>
                 Greet
               </Button>
             </HStack>
@@ -44,5 +52,6 @@ const RootPage = (): JSX.Element => {
     </VStack>
   );
 };
+RootPage.displayName = "RootPage";
 
 export { RootPage };
