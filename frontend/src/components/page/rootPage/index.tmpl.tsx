@@ -3,7 +3,7 @@ import { type ChangeEvent, useState } from "react";
 
 import { Greet } from "@wailsjs/go/main/App";
 
-import { useUserStore } from "@foo/hooks/useUserStore";
+import { useUserStore } from "@{{.ProjectName}}/hooks/useUserStore";
 
 import { SiteBody } from "@{{.ProjectName}}/components/model/site/SiteBody";
 import { SiteFooter } from "@{{.ProjectName}}/components/model/site/SiteFooter";
