@@ -1,13 +1,13 @@
 import { Button, Input } from "@nextui-org/react";
-import { ChangeEvent, useState } from "react";
-
-import { ApplicationPageBody } from "@{{.ProjectName}}/components/model/applicationPage/ApplicationPageBody";
-import { ApplicationPageFooter } from "@{{.ProjectName}}/components/model/applicationPage/ApplicationPageFooter";
-import { ApplicationPageHeader } from "@{{.ProjectName}}/components/model/applicationPage/ApplicationPageHeader";
-import { Counter } from "@{{.ProjectName}}/components/model/counter/Counter";
-import { HStack, VStack } from "@{{.ProjectName}}/components/ui/layout";
+import { type ChangeEvent, useState } from "react";
 
 import { Greet } from "@wailsjs/go/main/App";
+
+import { SiteBody } from "@{{.ProjectName}}/components/model/site/SiteBody";
+import { SiteFooter } from "@{{.ProjectName}}/components/model/site/SiteFooter";
+import { SiteHeader } from "@{{.ProjectName}}/components/model/site/SiteHeader";
+import { HStack, VStack } from "@{{.ProjectName}}/components/ui/layout";
+import { Heading } from "@{{.ProjectName}}/components/ui/typography";
 
 const RootPage = (): JSX.Element => {
   const [resultText, setResultText] = useState("Please enter your name below 👇");
@@ -23,29 +23,24 @@ const RootPage = (): JSX.Element => {
 
   return (
     <VStack className="relative min-h-screen bg-background">
-      <ApplicationPageHeader />
-      <ApplicationPageBody>
-        <main>
-          <HStack align="center" justify="center" grow="1" p="lg">
-            <VStack align="center" justify="center" gap="xl">
-              <h1 className="text-7xl font-extrabold">
-                Hello <span className="text-primary">Wails</span> App
-              </h1>
-              <VStack align="center" justify="center" gap="sm">
-                <div>{resultText}</div>
-                <VStack align="center" justify="center" gap="sm">
-                  <Input label="Name" labelPlacement="outside-left" onChange={handleChangeInput} />
-                  <Button color="primary" onClick={handleClickGreet}>
-                    Greet
-                  </Button>
-                </VStack>
-              </VStack>
-              <Counter />
-            </VStack>
-          </HStack>
-        </main>
-      </ApplicationPageBody>
-      <ApplicationPageFooter />
+      <SiteHeader />
+      <SiteBody className="flex items-center justify-center">
+        <VStack as="main" align="center" justify="center" gap="xl">
+          <Heading as="h1" className="text-7xl font-extrabold">
+            Hello <span className="text-primary">Wails</span> App
+          </Heading>
+          <VStack align="center" justify="center" gap="sm">
+            <div>{resultText}</div>
+            <HStack align="center" justify="center" gap="sm">
+              <Input label="Name" labelPlacement="outside-left" onChange={handleChangeInput} />
+              <Button color="primary" onClick={handleClickGreet}>
+                Greet
+              </Button>
+            </HStack>
+          </VStack>
+        </VStack>
+      </SiteBody>
+      <SiteFooter />
     </VStack>
   );
 };
