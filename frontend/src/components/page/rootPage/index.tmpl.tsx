@@ -35,12 +35,7 @@ const RootPage = (): JSX.Element => {
           <VStack align="center" justify="center" gap="sm">
             <div>{resultText}</div>
             <HStack align="center" justify="center" gap="sm">
-              <Input
-                label="Name"
-                labelPlacement="outside-left"
-                defaultValue={name}
-                onChange={handleInputChange}
-              />
+            <Input label="Name" defaultValue={name} onChange={handleInputChange} />
               <Button color="primary" onClick={handleGreetClick}>
                 Greet
               </Button>
