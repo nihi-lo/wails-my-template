@@ -3,7 +3,7 @@ import { Divider } from "@nextui-org/react";
 import { HStack } from "@{{.ProjectName}}/components/ui/layout";
 import { Heading } from "@{{.ProjectName}}/components/ui/typography";
 
-import { SectionVariantProps as VariantProps, sectionVariants as variants } from "./variants";
+import { type SectionVariantProps as VariantProps, sectionVariants as variants } from "./variants";
 
 interface SectionProps
   extends Omit<React.ComponentPropsWithoutRef<"section">, "className" | "style">,

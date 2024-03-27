@@ -1,17 +1,31 @@
-import { ContainerVariantProps as VariantProps, containerVariants as variants } from "./variants";
+import {
+  type ContainerVariantProps as VariantProps,
+  containerVariants as variants,
+} from "./variants";
 
 interface ContainerProps
-  extends Omit<React.ComponentPropsWithoutRef<"div">, "style">,
-    VariantProps {}
+  extends Omit<React.ComponentPropsWithoutRef<"div" | "main">, "style">,
+    VariantProps {
+  as?: "div" | "main";
+}
 
-const Container = ({ p, px, py, pt, grow, className, ...props }: ContainerProps): JSX.Element => {
+const Container = ({
+  p,
+  px,
+  py,
+  pt,
+  grow,
+  as: Tag = "div",
+  className,
+  ...props
+}: ContainerProps): JSX.Element => {
   /* ClassName variants */
   const { base } = variants({ p, px, py, pt, grow });
 
   return (
-    <div className={base({ className })} {...props}>
+    <Tag className={base({ className })} {...props}>
       {props.children}
-    </div>
+    </Tag>
   );
 };
 Container.displayName = "Container";

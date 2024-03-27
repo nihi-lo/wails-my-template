@@ -1,8 +1,12 @@
 import React from "react";
 
-import { HStackVariantProps as VariantProps, hStackVariants as variants } from "./variants";
+import { type HStackVariantProps as VariantProps, hStackVariants as variants } from "./variants";
 
-interface HStackProps extends Omit<React.ComponentPropsWithoutRef<"div">, "style">, VariantProps {}
+interface HStackProps
+  extends Omit<React.ComponentPropsWithoutRef<"div" | "main">, "style">,
+    VariantProps {
+  as?: "div" | "main";
+}
 
 const HStack = ({
   align,
@@ -16,15 +20,16 @@ const HStack = ({
   grow,
   children,
   className,
+  as: Tag = "div",
   ...props
 }: HStackProps): JSX.Element => {
   /* ClassName variants */
   const { base } = variants({ align, justify, wrap, gap, p, px, py, pt, grow });
 
   return (
-    <div className={base({ className })} {...props}>
+    <Tag className={base({ className })} {...props}>
       {children}
-    </div>
+    </Tag>
   );
 };
 HStack.displayName = "HStack";

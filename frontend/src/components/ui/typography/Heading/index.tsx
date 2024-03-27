@@ -1,4 +1,4 @@
-import { HeadingVariantProps as VariantProps, headingVariants as variants } from "./variants";
+import { type HeadingVariantProps as VariantProps, headingVariants as variants } from "./variants";
 
 interface HeadingProps
   extends Omit<React.ComponentPropsWithoutRef<"h1" | "h2" | "h3" | "h4" | "h5" | "h6">, "style">,
