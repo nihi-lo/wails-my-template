@@ -4,13 +4,13 @@ import {
   Button,
   DropdownMenu,
   DropdownItem,
-  Selection,
+  type Selection,
 } from "@nextui-org/react";
 import { useTheme } from "next-themes";
-import { Key, useEffect, useState } from "react";
+import { type Key, useEffect, useState } from "react";
 import { IoHelpOutline, IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
 
-const ThemeToggle = (): JSX.Element => {
+const ThemeToggleButton = (): JSX.Element => {
   const { setTheme, theme, systemTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [selectedKeys, setSelectedKeys] = useState(new Set([theme ?? ""]));
@@ -64,6 +64,6 @@ const ThemeToggle = (): JSX.Element => {
     </Dropdown>
   );
 };
-ThemeToggle.displayName = "ThemeToggle";
+ThemeToggleButton.displayName = "ThemeToggleButton";
 
-export { ThemeToggle };
+export { ThemeToggleButton };

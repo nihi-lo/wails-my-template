@@ -1,6 +1,6 @@
 import { Container, HStack } from "@{{.ProjectName}}/components/ui/layout";
 
-const ApplicationPageFooter = (): JSX.Element => {
+const SiteFooter = (): JSX.Element => {
   return (
     <footer className="bg-content1 py-6 md:px-8 md:py-0">
       <Container className="h-24">
@@ -11,6 +11,6 @@ const ApplicationPageFooter = (): JSX.Element => {
     </footer>
   );
 };
-ApplicationPageFooter.displayName = "ApplicationPageFooter";
+SiteFooter.displayName = "SiteFooter";
 
-export { ApplicationPageFooter };
+export { SiteFooter };
