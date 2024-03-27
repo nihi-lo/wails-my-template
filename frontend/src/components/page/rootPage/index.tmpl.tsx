@@ -1,12 +1,10 @@
 import { Button, Input } from "@nextui-org/react";
 import { ChangeEvent, useState } from "react";
 
-import {
-  ApplicationPageBody,
-  ApplicationPageFooter,
-  ApplicationPageHeader,
-} from "@{{.ProjectName}}/components/model/applicationPage";
-import { Counter } from "@{{.ProjectName}}/components/model/counter";
+import { ApplicationPageBody } from "@{{.ProjectName}}/components/model/applicationPage/ApplicationPageBody";
+import { ApplicationPageFooter } from "@{{.ProjectName}}/components/model/applicationPage/ApplicationPageFooter";
+import { ApplicationPageHeader } from "@{{.ProjectName}}/components/model/applicationPage/ApplicationPageHeader";
+import { Counter } from "@{{.ProjectName}}/components/model/counter/Counter";
 import { HStack, VStack } from "@{{.ProjectName}}/components/ui/layout";
 
 import { Greet } from "@wailsjs/go/main/App";

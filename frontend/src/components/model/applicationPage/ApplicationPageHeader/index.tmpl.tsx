@@ -1,6 +1,6 @@
 import { Divider } from "@nextui-org/react";
 
-import { ThemeToggle } from "@{{.ProjectName}}/components/model/theme";
+import { ThemeToggle } from "@{{.ProjectName}}/components/model/theme/ThemeToggle";
 import { Container, HStack } from "@{{.ProjectName}}/components/ui/layout";
 import { Header, HeaderProps } from "@{{.ProjectName}}/components/ui/surfaces";
 

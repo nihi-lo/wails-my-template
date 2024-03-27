@@ -2,7 +2,7 @@ import { NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider } from "next-themes";
 import { Route, Routes, useNavigate } from "react-router-dom";
 
-import { RootPage } from "@{{.ProjectName}}/components/page";
+import { RootPage } from "@{{.ProjectName}}/components/page/rootPage";
 
 function App(): JSX.Element {
   const navigate = useNavigate();
