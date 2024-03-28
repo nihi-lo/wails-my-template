@@ -3,13 +3,13 @@ import { type ChangeEvent, useState } from "react";
 
 import { Greet } from "@wailsjs/go/main/App";
 
-import { useUserStore } from "@{{.ProjectName}}/hooks/useUserStore";
+import { useUserStore } from "@foo/hooks/useUserStore";
 
-import { SiteBody } from "@{{.ProjectName}}/components/model/site/SiteBody";
-import { SiteFooter } from "@{{.ProjectName}}/components/model/site/SiteFooter";
-import { SiteHeader } from "@{{.ProjectName}}/components/model/site/SiteHeader";
-import { HStack, VStack } from "@{{.ProjectName}}/components/ui/layout";
-import { Heading } from "@{{.ProjectName}}/components/ui/typography";
+import { SiteBody } from "@foo/components/model/site/SiteBody";
+import { SiteFooter } from "@foo/components/model/site/SiteFooter";
+import { SiteHeader } from "@foo/components/model/site/SiteHeader";
+import { HStack, VStack } from "@foo/components/ui/layout";
+import { Heading } from "@foo/components/ui/typography";
 
 const RootPage = (): JSX.Element => {
   /* React hooks */
@@ -26,7 +26,7 @@ const RootPage = (): JSX.Element => {
 
   return (
     <VStack className="relative min-h-screen bg-background">
-      <SiteHeader />
+      <SiteHeader isSticky isGlass />
       <SiteBody className="flex items-center justify-center">
         <VStack as="main" align="center" justify="center" gap="xl">
           <Heading as="h1" className="text-7xl font-extrabold">
@@ -35,7 +35,7 @@ const RootPage = (): JSX.Element => {
           <VStack align="center" justify="center" gap="sm">
             <div>{resultText}</div>
             <HStack align="center" justify="center" gap="sm">
-            <Input label="Name" defaultValue={name} onChange={handleInputChange} />
+              <Input label="Name" defaultValue={name} onChange={handleInputChange} />
               <Button color="primary" onClick={handleGreetClick}>
                 Greet
               </Button>

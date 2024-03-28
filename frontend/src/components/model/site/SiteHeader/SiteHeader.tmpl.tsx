@@ -2,13 +2,22 @@ import { Divider } from "@nextui-org/react";
 
 import { ThemeToggleButton } from "@{{.ProjectName}}/components/model/theme/ThemeToggleButton";
 import { Container, HStack } from "@{{.ProjectName}}/components/ui/layout";
-import { Header, type HeaderProps } from "@{{.ProjectName}}/components/ui/surfaces";
 
-type SiteHeaderProps = HeaderProps;
+import {
+  type SiteHeaderVariantProps as VariantProps,
+  siteHeaderVariants as variants,
+} from "./SiteHeader.variants";
 
-const SiteHeader = ({ ...props }: SiteHeaderProps): JSX.Element => {
+type SiteHeaderProps = VariantProps & {
+  className?: string | undefined;
+};
+
+const SiteHeader = ({ isSticky, isGlass, className, ...props }: SiteHeaderProps): JSX.Element => {
+  /* ClassName variants */
+  const { base } = variants();
+
   return (
-    <Header isSticky isGlass {...props}>
+    <header className={base({ isSticky, isGlass, className })} {...props}>
       <Container className="h-14">
         <HStack align="center" className="h-full">
           <HStack align="center" gap="xs">
@@ -20,7 +29,7 @@ const SiteHeader = ({ ...props }: SiteHeaderProps): JSX.Element => {
         </HStack>
       </Container>
       <Divider />
-    </Header>
+    </header>
   );
 };
 SiteHeader.displayName = "SiteHeader";

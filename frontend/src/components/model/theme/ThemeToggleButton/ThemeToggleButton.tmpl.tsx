@@ -10,10 +10,32 @@ import { useTheme } from "next-themes";
 import { type Key, useEffect, useState } from "react";
 import { IoHelpOutline, IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
 
-const ThemeToggleButton = (): JSX.Element => {
+import {
+  type ThemeToggleButtonVariantProps as VariantProps,
+  themeToggleButtonVariants as variants,
+} from "./ThemeToggleButton.variants";
+
+type ThemeToggleButtonProps = VariantProps;
+
+const ThemeToggleButton = ({ ...props }: ThemeToggleButtonProps): JSX.Element => {
+  /* React hooks */
   const { setTheme, theme, systemTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [selectedKeys, setSelectedKeys] = useState(new Set([theme ?? ""]));
+
+  /* ClassName variants */
+  const { base } = variants();
+
+  /* Event handlers */
+  const handleAction = (key: Key): void => {
+    setTheme(key.toString());
+  };
+  const handleSelectionChange = (keys: Selection): unknown => {
+    if (keys !== "all") {
+      setSelectedKeys(new Set([keys.values().next().value as string]));
+    }
+    return;
+  };
 
   const ThemeIcon =
     theme === "system"
@@ -28,23 +50,12 @@ const ThemeToggleButton = (): JSX.Element => {
           ? IoMoonOutline
           : IoHelpOutline;
 
-  /* Event handlers */
-  const handleAction = (key: Key): void => {
-    setTheme(key.toString());
-  };
-  const handleSelectionChange = (keys: Selection): unknown => {
-    if (keys !== "all") {
-      setSelectedKeys(new Set([keys.values().next().value as string]));
-    }
-    return;
-  };
-
   useEffect(() => {
     setMounted(true);
   }, [theme]);
 
   return (
-    <Dropdown>
+    <Dropdown className={base()} {...props}>
       <DropdownTrigger>
         <Button isIconOnly variant="ghost" isDisabled={!mounted}>
           <ThemeIcon className="size-5" />

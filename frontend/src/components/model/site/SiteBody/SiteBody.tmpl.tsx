@@ -1,9 +1,12 @@
 import {
   type SiteBodyVariantProps as VariantProps,
   siteBodyVariants as variants,
-} from "./variants";
+} from "./SiteBody.variants";
 
-type SiteBodyProps = Omit<React.ComponentPropsWithoutRef<"div"> & VariantProps, "style">;
+type SiteBodyProps = VariantProps & {
+  children: React.ReactNode;
+  className?: string | undefined;
+};
 
 const SiteBody = ({ children, className, ...props }: SiteBodyProps): JSX.Element => {
   /* ClassName variants */
