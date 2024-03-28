@@ -2,7 +2,8 @@ import { NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider } from "next-themes";
 import { Route, Routes, useNavigate } from "react-router-dom";
 
-import { RootPage } from "@{{.ProjectName}}/components/page/rootPage";
+import { AboutPage } from "@{{.ProjectName}}/components/page/About";
+import { RootPage } from "@{{.ProjectName}}/components/page/Root";
 
 function App(): JSX.Element {
   const navigate = useNavigate();
@@ -12,6 +13,7 @@ function App(): JSX.Element {
       <ThemeProvider attribute="class" defaultTheme="system">
         <Routes>
           <Route path="/" element={<RootPage />} />
+          <Route path="/about" element={<AboutPage />} />
         </Routes>
       </ThemeProvider>
     </NextUIProvider>
