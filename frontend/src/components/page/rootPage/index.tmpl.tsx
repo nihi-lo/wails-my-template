@@ -3,13 +3,13 @@ import { type ChangeEvent, useState } from "react";
 
 import { Greet } from "@wailsjs/go/main/App";
 
-import { useUserStore } from "@foo/hooks/useUserStore";
+import { useUserStore } from "@{{.ProjectName}}/hooks/useUserStore";
 
-import { SiteBody } from "@foo/components/model/site/SiteBody";
-import { SiteFooter } from "@foo/components/model/site/SiteFooter";
-import { SiteHeader } from "@foo/components/model/site/SiteHeader";
-import { HStack, VStack } from "@foo/components/ui/layout";
-import { Heading } from "@foo/components/ui/typography";
+import { SiteBody } from "@{{.ProjectName}}/components/model/site/SiteBody";
+import { SiteFooter } from "@{{.ProjectName}}/components/model/site/SiteFooter";
+import { SiteHeader } from "@{{.ProjectName}}/components/model/site/SiteHeader";
+import { HStack, VStack } from "@{{.ProjectName}}/components/ui/layout";
+import { Heading } from "@f{{.ProjectName}}oo/components/ui/typography";
 
 const RootPage = (): JSX.Element => {
   /* React hooks */
