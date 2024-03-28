@@ -9,7 +9,7 @@ import { SiteBody } from "@{{.ProjectName}}/components/model/site/SiteBody";
 import { SiteFooter } from "@{{.ProjectName}}/components/model/site/SiteFooter";
 import { SiteHeader } from "@{{.ProjectName}}/components/model/site/SiteHeader";
 import { HStack, VStack } from "@{{.ProjectName}}/components/ui/layout";
-import { Heading } from "@f{{.ProjectName}}oo/components/ui/typography";
+import { Heading } from "@{{.ProjectName}}/components/ui/typography";
 
 const RootPage = (): JSX.Element => {
   /* React hooks */
